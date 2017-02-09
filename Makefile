@@ -9,4 +9,7 @@ gadt-ocaml: src/gadt.ml
 .PHONY: clean
 
 clean:
-	rm -rf src/*.o src/*.hi src/*cm[io] gadt-haskell gadt-ocaml
+	rm -rf src/*.o src/*.hi src/*cm[io] gadt-haskell gadt-ocaml *.native src/*.native
+
+# rebuild freaks the hell out when it sees the Ocaml build artifacts, so we
+# can't build it here, but we will clean up after it in clean.
