@@ -1,2 +1,5 @@
 *.native
+*.o
+*.hi
+gadt-haskell
 _build/
