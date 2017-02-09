@@ -18,8 +18,6 @@ eval (B b) = b
 eval (Add x y) = eval x + eval y
 eval (Eq x y) = eval x == eval y
 
-value = Eq (Add (I 4) (I 3)) (I 7)
-
 showResult :: Show a => Exp a -> IO ()
 showResult a = putStrLn $ show a ++ " -> " ++ show (eval a)
 
