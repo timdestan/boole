@@ -1,5 +1,7 @@
 *.native
 *.o
 *.hi
+*.cm[io]
+gadt-ocaml
 gadt-haskell
 _build/
